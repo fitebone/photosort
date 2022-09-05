@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.james.h_photo.Pager">
+
+    <item android:id="@+id/showTags"
+        android:title="Show Tags"
+        android:visible="true"
+        app:showAsAction="collapseActionView"/>
+
+    <item android:id="@+id/addTag"
+        android:title="Add Tag"
+        android:visible="true"
+        app:showAsAction="collapseActionView"/>
+
+    <item android:id="@+id/renameImage"
+        android:title="Rename"
+        android:visible="false"/>
+
+    <item android:id="@+id/deleteImage"
+        android:title="Delete"
+        android:visible="false"/>
+</menu>

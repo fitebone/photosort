@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="150dp"
+    android:layout_marginHorizontal="70dp"
+    android:background="@color/black_overlay">
+
+    <TextView
+        android:id="@+id/createAlbumHidden"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="25sp"
+        android:text="Hidden"/>
+
+    <Switch
+        android:id="@+id/switchHidden"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@id/createAlbumHidden"/>
+
+    <View
+        android:id="@+id/break_1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@id/switchHidden"/>
+
+    <TextView
+        android:id="@+id/createAlbumLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/break_1"
+        android:textSize="25sp"
+        android:text="Location"/>
+
+    <RadioGroup
+        android:id="@+id/radioLocationGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/createAlbumLocation">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Local"
+            android:id="@+id/radioLocal"
+            android:layout_gravity="center_horizontal"
+            android:checked="true"
+            android:textSize="25sp" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Emulated"
+            android:id="@+id/radioEmulated"
+            android:layout_gravity="center_horizontal"
+            android:checked="false"
+            android:textSize="25sp" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SD"
+            android:id="@+id/radioSD"
+            android:layout_gravity="center_horizontal"
+            android:checked="false"
+            android:textSize="25sp" />
+    </RadioGroup>
+
+    <View
+        android:id="@+id/break_2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@id/radioLocationGroup"/>
+
+    <TextView
+        android:id="@+id/createAlbumName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/break_2"
+        android:textSize="25sp"
+        android:text="Name"/>
+
+    <EditText
+        android:id="@+id/editTextAlbumName"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/createAlbumName"
+        android:inputType="text"/>
+
+</RelativeLayout>

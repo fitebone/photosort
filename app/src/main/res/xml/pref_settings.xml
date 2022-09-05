@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference
+        android:defaultValue="1"
+        android:entries="@array/pref_sd_or_local_titles"
+        android:entryValues="@array/pref_sd_or_local_values"
+        android:key="sd_or_local"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/pref_title_sd_or_local" />
+    <ListPreference
+        android:defaultValue="0"
+        android:entries="@array/pref_hidden_or_not_titles"
+        android:entryValues="@array/pref_hidden_or_not_values"
+        android:key="hidden_or_not"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/pref_title_hidden_or_not" />
+</PreferenceScreen>
